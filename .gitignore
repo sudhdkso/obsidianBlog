@@ -1,15 +1,27 @@
-# Generated website directory
-_site/
+# Bundler cache
+.bundle
+vendor
+Gemfile.lock
 
-# Sass cache
-.sass-cache/
-
-# Jekyll cache & metadata
-.jekyll-cache/
+# Jekyll cache
+.jekyll-cache
 .jekyll-metadata
+_site
 
-# Notes graph metadata
-_includes/notes_graph.json
+# RubyGems
+*.gem
 
-# Obsidian config
-.obsidian/
+# NPM dependencies
+node_modules
+package-lock.json
+
+# IDE configurations
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# Misc
+_sass/dist
+assets/js/dist
