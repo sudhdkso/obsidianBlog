@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "ff376291c2920c6d",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab833f0ab0c42e9c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc44d8227c37f136",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spring/POJO(Plain Old Java Object)란.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f408ced089370935",
+    "type": "split",
+    "children": [
+      {
+        "id": "02e3dafae8c5e47c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "70c720c554742275",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3dc38a5f26b993f1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "03568d37754d0020",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f7791e68c3774ecf",
+    "type": "split",
+    "children": [
+      {
+        "id": "105d4a0ca8ed1e87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6498d048d56cd0c9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Spring/POJO(Plain Old Java Object)란.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6c0cf6ae32045dc3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Spring/POJO(Plain Old Java Object)란.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cf930e924f0c0d39",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3cf720f6bae954c2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Spring/POJO(Plain Old Java Object)란.md"
+              }
+            }
+          },
+          {
+            "id": "8807bb8a799aa872",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "dc44d8227c37f136",
+  "lastOpenFiles": [
+    "무제 파일.canvas",
+    "Spring/POJO(Plain Old Java Object)란.md",
+    "Spring/PSA(Portable Service Abstraction).md",
+    "DB/트랜잭션(Transaction) 이란.md",
+    "JPA/saveAll()과 save()의 차이.md~",
+    "Spring/POJO(Plain Old Java Object)란.md~",
+    "animals/cats.md",
+    "JPA/saveAll()과 save()의 차이.md",
+    "JPA/save().md",
+    "DB",
+    "animals/tigers.md",
+    "JPA",
+    "accents.md",
+    "your-first-note.md",
+    "Spring.md",
+    "Spring",
+    "move your body every day.md",
+    "2024-10-14.md",
+    "consistency.md"
+  ]
+}
