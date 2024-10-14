@@ -2,9 +2,9 @@
 
 -  Plain Old Java Object, 해석하자면 **오래된 방식의 간단한 자바 오브젝트** 라는 의미로 일명 포조(POJO)라고 합니다.
 
-- Java EE 등의 중량 프레임워크들을 사용하게 되면서 **해당 프레임워크에 종속된 "무거운" 객체를 만들게 된 것에 반발해서 사용되게 된 용어입니다.**
+- Java EE등의 중량 프레임워크들을 사용하게 되면서 **해당 프레임워크에 종속된 "무거운" 객체를 만들게 된 것에 반발해서 사용되게 된 용어입니다.**
 
-- 2000년 9월에 마틴 파울러, 레베카 파슨, 조쉬 맥킨지 등이 사용하기 시작한 용어로서 마틴 파울러는 다음과 같이 그 기원을 밝히고 있다.
+- 2000년 9월에 마틴 파울러, 레베카 파슨, 조쉬 맥킨지 등이 사용하기 시작한 용어로서 마틴 파울러는 다음과 같이 그 기원을 밝히고 있다.
 
 >💡 특정 ‘기술’과 환경에 종속되어 **의존하게 된 자바 코드는 가독성이 떨어져 유지보수가 어렵고 확장성이 매우 떨어지는 단점**이 있었습니다. 이는 **객체지향 언어인 자바가 객체지향의 장점들을 잃어버리게 되는 것**입니다. 그래서 POJO라는 개념이 등장했습니다.
 
@@ -18,21 +18,21 @@
     
     ```java
     public class Person {
-        private String name;
-        private int age;
-        
-        public String getName() {
-        	return name;
-        }
-        public String getAge() {
-        	return age;
-        }
-        public void setName(String name) {
-        	this.name = name;
-        }
-        public void setAge(int age) {
-        	this.age = age;
-        }
+        private String name;
+        private int age;
+    
+        public String getName() {
+    	    return name;
+        }
+        public String getAge() {
+    	    return age;
+        }
+        public void setName(String name) {
+    	    this.name = name;
+        }
+        public void setAge(int age) {
+    	    this.age = age;
+        }
     }
     ```
     
@@ -52,7 +52,7 @@
     
     Hibernate는 스프링 개발에서 많이 사용하고 있는 기술입니다. 특정 기술에 종속적이면 POJO가 아니라면서 스프링에서는 어떻게 가능한 걸까요? 바로 스프링에서 정한 **표준 인터페이스**가 있기 때문입니다.
     
-    스프링 개발자들은 ORM이라는 기술을 사용하기 위해서 **JPA**라는 **표준 인터페이스**를 정해두었습니다. 그리고 이제 여러 ORM 프레임워크들은 이 JPA라는 표준 인터페이스 아래, 구현되어 실행됩니다. 이것이 스프링이 새로운 엔터프라이즈 기술을 도입 하면서도 POJO를 유지하는 방법입니다. 그리고 이런 방법을 스프링의 **PSA**라고 얘기합니다.
+    스프링 개발자들은 ORM이라는 기술을 사용하기 위해서 **JPA**라는 **표준 인터페이스**를 정해두었습니다. 그리고 이제 여러 ORM 프레임워크들은 이 JPA라는 표준 인터페이스 아래, 구현되어 실행됩니다. 이것이 스프링이 새로운 엔터프라이즈 기술을 도입 하면서도 POJO를 유지하는 방법입니다. 그리고 이런 방법을 스프링의 **PSA**라고 얘기합니다.
     
     직접 의존하게 되면
     

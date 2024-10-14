@@ -106,7 +106,7 @@ public<SextendsT> List<S> saveAll(Iterable<S> entities) {
 
 ## 성능이 차이나는 이유
 
-save()와 saveAll()모두 `@Transactional` 어노테이션이 달린 것을 볼 수 있습니다 .그리고 기본 트랜잭션 propagation 타입은 **REQUIRED**_입니다._ **REQUIRED**는 트랜잭션이 존재하지 않으면 새로운 트랜잭션을 생성하고, 이미 존재하면 그 트랜잭션에 참여하는 유형입니다.
+save()와 saveAll()모두 `@Transactional` 어노테이션이 달린 것을 볼 수 있습니다.그리고 기본 트랜잭션 propagation 타입은**REQUIRED**_입니다. **REQUIRED**는 트랜잭션이 존재하지 않으면 새로운 트랜잭션을 생성하고, 이미 존재하면 그 트랜잭션에 참여하는 유형입니다.
 
 그리고 `@Transactional` 의 경우 AOP 프록시 기반으로, 외부 Bean 객체가 있고, 이 객체의 함수를 호출해야 Intercept가 되어 트랜잭션으로 묶이게 됩니다. 따라서 save()를 여러번 호출하는 경우는 계속 기존의 트랜잭션이 존재하는 지 계속 확인해줘야 하기 때문에 추가로 리소스가 소모됩니다. 하지만 saveAll()의 경우는 내부에서 save()를 호출하기 때문에 saveAll()을 할 때 트랜잭션이 생성되어 하나의 트랜잭션으로 작동하게 됩니다. 그래서 save()를 여러번 하는 것보다 성능이 더 좋은 것입니다.
 
