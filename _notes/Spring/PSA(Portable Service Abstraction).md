@@ -86,7 +86,7 @@ try (Connection conn = DriverManager.getConnection(
 } catch(SQLException e) {
 	System.out.println(e.getMessage());
 	conn.rollback();
-}
+ }
 ```
 
 2번째 SQL문에 INSERTED INT 의 오타로 인해 커밋되지 않고 catch문으로 가게 되어 `conn.rollback();`으로 롤백 하는 코드입니다.
