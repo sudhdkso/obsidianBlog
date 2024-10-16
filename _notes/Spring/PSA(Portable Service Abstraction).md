@@ -1,5 +1,6 @@
 ![](https://img.notionusercontent.com/s3/prod-files-secure%2F560fc466-27da-429f-ba6b-9df88144a59a%2Fadc1e71d-349a-4503-b7e8-a007344b16c3%2FUntitled.png/size/w=2000?exp=1728905458&sig=Knwr3SeZqAoHqkAql4uMiC8LhD-drqrTqGAm_1rmxTo)
 
+
 ## PSA(Portable Service Abstraction)
 
 - PSA란 **환경의 변화와 관계없이 일관된 방식의 기술로의 접근 환경을 제공하는 추상화 구조**를 말합니다**.**
@@ -9,7 +10,8 @@
 - PSA가 적용된 코드라면 나의 코드가 바뀌지 않고, 다른 기술로 간편하게 바꿀 수 있도록 확장성이 좋고,
 - Spring은**Spring Web MVC, Spring Transaction, Spring Cache 등의 다양한 PSA를 제공**합니다.
 
-## **1. Spring Web MVC**
+## PSA의 예시
+###  1. Spring Web MVC
 
 ### **일반적인 서블릿의 형태**
 
@@ -32,7 +34,7 @@
     ```
     
 
-### **Spring Web MVC의 형태**
+####  Spring Web MVC의 형태
 
 ```java
 @Controller
@@ -54,7 +56,7 @@ Spring Web MVC의 형태에서는 서블릿이 전혀 존재하지 않고 @Contr
 
 그래서 우리는 서블릿을 low level로 개발하지 않아도 됩니다.
 
-## 2. Spring Transaction
+###  2. Spring Transaction
 
 ### Low Level
 
@@ -108,7 +110,7 @@ Employees findById(Integer id);
 
 **기존 코드는 변경하지 않은 채로 트랜잭션을 실제로 처리하는 구현체를 사용 기술에 따라 바꿀 수 있는 것**입니다.
 
-## 3. Spring Cache
+### 3. Spring Cache
 
 Cache도 마찬가지로 JCacheManager, ConcurrentMapCacheManager, EhCacheCacheManager와 같은 여러가지 구현체를 사용할 수 있습니다.
 
